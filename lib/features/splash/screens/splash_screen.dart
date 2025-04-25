@@ -99,20 +99,14 @@ class SplashScreenState extends State<SplashScreen> {
     }
   }
 
-  void _handleNavigation() async {
-    if (widget.notificationBody != null && widget.linkBody == null) {
-      _forNotificationRouteProcess();
-    } else if (Get.find<AuthController>().isLoggedIn()) {
-      _forLoggedInUserRouteProcess();
-    } else if (Get.find<SplashController>().showIntro()!) {
-      _newlyRegisteredRouteProcess();
-    } else if (Get.find<AuthController>().isGuestLoggedIn()) {
-      _forGuestUserRouteProcess();
-    } else {
-      await Get.find<AuthController>().guestLogin();
-      _forGuestUserRouteProcess();
-    }
+void _handleNavigation() async {
+  if (widget.notificationBody != null && widget.linkBody == null) {
+    _forNotificationRouteProcess();
+  } else {
+    Get.offNamed(RouteHelper.getSignInRoute('splash'));
   }
+}
+
 
   void _forNotificationRouteProcess() {
     if(widget.notificationBody!.notificationType == NotificationType.order) {

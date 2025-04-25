@@ -1,0 +1,2 @@
+/home/user/Food-Engine--User-app/android/app/.cxx/RelWithDebInfo/9w1qh3f4/arm64-v8a/CMakeFiles/rebuild_cache.dir
+/home/user/Food-Engine--User-app/android/app/.cxx/RelWithDebInfo/9w1qh3f4/arm64-v8a/CMakeFiles/edit_cache.dir
