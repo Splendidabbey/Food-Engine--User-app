@@ -1190,5 +1190,6 @@
   "email_verification" : "Email Verification",
   "password_reset_successfully" : "Password reset successfully",
   "or_login_with" : "Or Login with",
-  "confirm" : "Confirm"
+  "confirm" : "Confirm",
+  "or_contact_us": "or contact us"
 }
